@@ -7,63 +7,63 @@ let matches = 0,
 // sounds Effects
 
 const cardClickedSound = document.createElement("audio");
-cardClickedSound.src = "../sounds/cardClick.mp3";
+cardClickedSound.src = "./sounds/cardClick.mp3";
 cardClickedSound.volume = 0.3;
 
 const matchFoundSound = document.createElement("audio");
-matchFoundSound.src = "../sounds/matchFound.mp3";
+matchFoundSound.src = "./sounds/matchFound.mp3";
 
 const successSound = document.createElement("audio");
-successSound.src = "../sounds/success.mp3";
+successSound.src = "./sounds/success.mp3";
 
 const boardImages = [
   {
     img: 1,
-    src: "../images/1.png",
+    src: "./images/1.png",
   },
   {
     img: 2,
-    src: "../images/2.png",
+    src: "./images/2.png",
   },
   {
     img: 3,
-    src: "../images/3.png",
+    src: "./images/3.png",
   },
   {
     img: 4,
-    src: "../images/4.png",
+    src: "./images/4.png",
   },
   {
     img: 5,
-    src: "../images/5.png",
+    src: "./images/5.png",
   },
   {
     img: 6,
-    src: "../images/6.png",
+    src: "./images/6.png",
   },
   {
     img: 7,
-    src: "../images/7.png",
+    src: "./images/7.png",
   },
   {
     img: 8,
-    src: "../images/8.png",
+    src: "./images/8.png",
   },
   {
     img: 9,
-    src: "../images/9.png",
+    src: "./images/9.png",
   },
   {
     img: 10,
-    src: "../images/10.png",
+    src: "./images/10.png",
   },
   {
     img: 11,
-    src: "../images/11.png",
+    src: "./images/11.png",
   },
   {
     img: 12,
-    src: "../images/12.png",
+    src: "./images/12.png",
   },
 ];
 
@@ -87,7 +87,7 @@ function createGameBoard(size) {
     cards[i].appendChild(shape);
     // shape.classList.toggle("hidden");
     let whiteImage = document.createElement("img");
-    whiteImage.src = "../images/white.png";
+    whiteImage.src = "./images/white.png";
     whiteImage.setAttribute("data-id", sizedBoaredImages[i].img);
     cards[i].appendChild(whiteImage);
 
